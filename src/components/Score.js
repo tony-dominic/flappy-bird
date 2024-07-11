@@ -10,7 +10,7 @@ function Score({ position }) {
         left: '50%',
         fontSize: 30,
         fontWeight: 'bold',
-        color: '#ff0000e3',
+        color: '#a71612',
         transform: 'translate(-50%,-50%)',
         zIndex: 2
       }}

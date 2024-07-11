@@ -12,7 +12,7 @@ function Title({ isPlay, startGame, position }) {
             textTransform: 'uppercase',
             fontSize: 30,
             fontWeight: 'bold',
-            color: '#ff0000e3',
+            color: '#a71612',
             cursor: 'pointer',
             transform: 'translate(-50%,-50%)'
           }}

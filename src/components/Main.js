@@ -6,7 +6,7 @@ import Pipe from './Pipe'
 import Foreground from './Foreground'
 
 import BgImage from '../images/bg.png'
-import { useObserver, useLocalStore } from 'mobx-react'
+import { useLocalStore } from 'mobx-react'
 
 let gameLoop
 let pipeGenerator
@@ -22,7 +22,7 @@ function Main() {
       if (down) return
       down = true
 
-      if (e.keyCode === 32) {
+      if (e.keyCode === 32 || e.keyCode === 38) {
         fly()
         setIsPlay(true)
       }
@@ -154,12 +154,12 @@ function Main() {
           top: '10%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          color: '#a5e115',
+          color: '#043f07',
           fontWeight: 'bold',
-          fontSize: 30
+          fontSize: 34
         }}
       >
-        Have fun 😁😁😁
+        Sky's the Limit! 🚀🚀🚀
       </div>
       <div
         style={{
@@ -171,7 +171,7 @@ function Main() {
           backgroundImage: `url(${BgImage})`,
           overflow: 'hidden',
           transform: 'translate(-50%, -50%)',
-          border: '1px solid black',
+          border: '1px solid #050d21',
           borderRadius: 20,
           boxShadow: '0 20px 50px rgba(8, 112, 184, 0.7)'
         }}
